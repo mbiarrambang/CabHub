@@ -44,8 +44,8 @@ function Signup() {
                 <label htmlFor='password'>Password:</label>
                 <input type='password' placeholder='******'className='signup-input'
                     /*onChange={(e) => setPassword(e.target.value)} *//>
-
-                <button /*onClick={handleSubmit}*/ type="submit">Sign up</button>
+                
+                <Link to="/"><button /*onClick={handleSubmit}*/ type="submit">Sign up</button></Link>
                 <p>Have Account? <Link to="/login">Login</Link></p>
             </form>
         </div>
