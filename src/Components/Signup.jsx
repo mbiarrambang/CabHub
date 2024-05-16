@@ -1,9 +1,9 @@
 
-import React /*{ useState } */from 'react'
+import React /*{ useState } */ from 'react'
 import '../App.css'
-import './w3.css'
+import '/home/mbiarrambang/Desktop/MySign/node_modules/bootstrap/dist/css/bootstrap-grid.css'
 //import Axios from 'axios'
-import { Link/*, useNavigate */} from 'react-router-dom'
+import { Link/*, useNavigate */ } from 'react-router-dom'
 
 
 
@@ -30,25 +30,8 @@ function Signup() {
         })
     };*/
     return (
-        <div className='sign-up-container'>
-            <form className='sign-up-form w3-green w3-round w3-padding-small' method='post' action='/signup' /*onSubmit={handleSubmit}*/>
-                <h2>Sign Up</h2>
-                <label htmlFor='Username'>Username:</label>
-                <input type='text' placeholder='Username'className='signup-input'
-                    /*onChange={(e) => setUsername(e.target.value)} *//>
-
-                <label htmlFor='email'>Email:</label>
-                <input type='email' autoComplete='off' placeholder='Email'className='signup-input'
-                    /*onChange={(e) => setEmail(e.target.value)} *//>
-
-                <label htmlFor='password'>Password:</label>
-                <input type='password' placeholder='******'className='signup-input'
-                    /*onChange={(e) => setPassword(e.target.value)} *//>
-                
-                <Link to="/"><button /*onClick={handleSubmit}*/ type="submit">Sign up</button></Link>
-                <p>Have Account? <Link to="/login">Login</Link></p>
-            </form>
-        </div>
+        <>
+        </>
     )
 }
 
