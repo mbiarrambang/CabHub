@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import Signup from './Components/Signup'
-import Login from './Components/Login'
+import Signlog from './Components/Signlog'
 import ForgotPassword from './Components/ForgotPassword'
 import CustomerInfo from './Components/CustomerInfo.jsx'
 import CreateUser from './Components/CreateUser.jsx'
 import UpdateUser from './Components/UpdateUser.jsx'
-import HomeUser from './User/HomeUser.jsx'
+import HomeUser from './HomeUser.jsx'
 import Addcustomer from './Sidelinks/Addcustomer.jsx'
 import AddDrivers from './Sidelinks/AddDrivers.jsx'
 import Addvehicles from './Sidelinks/Addvehicles.jsx'
@@ -23,8 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<HomeUser />}></Route>
-            <Route path="/signup" element={<Signup />}></Route>
-            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signlog" element={<Signlog />}></Route>
             <Route path="/home" element={<App />}></Route>
             <Route path="/forgotPassword" element={<ForgotPassword />}></Route>
             <Route path="/customerinfo" element={<CustomerInfo />}></Route>

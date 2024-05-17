@@ -1,11 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
-import {    BsJustify } from 'react-icons/bs'
+import { BsJustify, BsArrowDown } from 'react-icons/bs'
 import './App.css'
  
 
 
 function Header() {
-
   return (
     <header className='header' >
       
@@ -15,9 +15,10 @@ function Header() {
       <nav className='navbar'>
         <a href="#">home</a>
         <a href="#">about</a>
-        <a to="#">service</a>
+        <a to="#">service <BsArrowDown /></a>
         <a to="#">blog</a>
         <a to="#">contact</a>
+        
       </nav>
       <div className='menu-icon'>
       {/*<span className='icon close_icon'>X</span>*/}
