@@ -3,7 +3,7 @@ import React from 'react'
 import './index.css'
 import './w3.css'
 import  Navbar  from "./Navbar";
-import  "../App.css";
+import  "./App.css";
 import Header from './Header'
 import { useState } from 'react'
 //import './fontawesome-free-6.5.2-web/css/all.min.css'
