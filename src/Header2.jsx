@@ -1,16 +1,11 @@
 import React from 'react'
-import {  BsPersonCircle,  BsJustify }
-  from 'react-icons/bs'
-  import './App.css'
-  //import '/src/User/fontawesome-free-6.5.2-web/css/all.min.css'
+import {    BsJustify } from 'react-icons/bs'
+import './App.css'
+ 
 
 
 function Header() {
 
-   /*navbar.onClick=()=>{
-    menubar.classList.toggle('fa-times');
-    mynav.classList.toggle('active');
-  }*/
   return (
     <header className='header' >
       

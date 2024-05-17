@@ -3,11 +3,11 @@ import React from 'react'
 import './index.css'
 import './w3.css'
 import  Navbar  from "./Navbar";
-import  "./App.css";
-import Header from './Header'
+import  "./App2.css";
+import Header from './Header2'
 import { useState } from 'react'
 //import './fontawesome-free-6.5.2-web/css/all.min.css'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 //import { color } from '@chakra-ui/react'
 //<BsCart3 className='icon_header' /> import {BsCart3} from 'react-icons/bs'
 
