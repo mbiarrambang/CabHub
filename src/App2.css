@@ -1,0 +1,583 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  'Poppins';
+  text-transform: capitalize;
+  scroll-snap-align: start;
+}
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+
+.icon,
+.icon_header {
+  margin-right: 5px;
+}
+
+.icon .search {
+  margin-left: 5px;
+}
+
+.close_icon {
+  color: #9e9ea4;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*Header*/
+.header {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  background: fixed;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.wp-container-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  background-color: #f3f4f8;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  /*
+  we want the z-index of the sidebsr higher so that
+  the charts are not showing over the sidebar
+  on small screens
+  */
+  z-index: 12 !important;
+}
+
+.wp-container {
+  flex-wrap: wrap;
+  margin-top: 7%;
+  background-color: white;
+}
+
+.unlock-ubga img {
+  width: 396px;
+  height: 450px;
+
+}
+
+
+
+.ubga-container-img img {
+  width: 540px;
+  height: 480px;
+  border-radius: 30px;
+}
+
+.ubga-container {
+  width: 100%;
+  margin: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+nav a {
+  font-size: 1.7em;
+  color: #000;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: #007bfa;
+
+}
+
+nav .icon {
+  display: none;
+}
+
+
+.ast-container {
+  background-color: #4e597d;
+  /*background-image: url('/src/assets/pexels-photo-1310781.jpeg');
+  background-position: center;
+  background-size: cover;*/
+  height: 60vh;
+  color: #fff;
+  text-align: center;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.content h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.ast-container .btn {
+  text-align: center;
+  padding: 1.5rem;
+  width: 20px;
+
+}
+
+.book-btn {
+  text-align: center;
+  background-color: #007bfa;
+  width: 10%;
+  height: 8%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+
+.book-btn a {
+  font-size: 23px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.wp-block {
+  display: flex;
+  margin-top: -80px;
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 60%;
+  margin-left: 25%;
+  border-radius: 10px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0.35);
+}
+
+.wp-block div {
+  display: flex;
+  margin-left: 50px;
+}
+
+.navbar.active {
+  top: 10%;
+}
+
+.header h1 span {
+  color: #007bfa;
+}
+
+.ubg-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+.primary {
+  display: block;
+  margin-left: 33%;
+  width: 30%;
+  height: 400px;
+}
+.next-middle{
+  display: flex;
+  
+  text-align: center;
+}
+.next-container-inner-block {
+  display: block;
+  text-align: center;
+}
+.next-middle-report{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.next-middle-report div{
+  margin: 20px;
+}
+
+.testimonials{
+  display: block;
+}
+.inner-testimonials{
+  display: block;
+}
+.uagb-inner{
+  display: block;
+  width: 350px;
+  
+}
+.uagb-inner div{
+  margin: 10px;
+}
+.uagb-inner .heading ,.heading-text{
+  text-align: center;
+}
+.uagb-inner .next-testimonials{
+  display: flex;
+  text-align: center;
+}
+.uagb-inner div img{
+  border-radius: 30px;
+}
+.next-middle{
+  display: block;
+  
+  text-align: center;
+}
+.next-container-inner-block {
+  display: block;
+  text-align: center;
+}
+.next-middle-report{
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.next-addvanced-heading{
+  font-size: 15px;
+}
+.next-middle-report next-testimonials{
+  margin: 20px;
+}
+
+.wp-block .icon {
+  color: #007bfa;
+}
+.inner-wp-block{
+  display: block;
+}
+.inner-wp-block p{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small <= 768px */
+
+@media screen and (max-width: 760px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+
+  .ubga-container {
+    width: 20%;
+    margin: 7%;
+    display: inline;
+  }
+
+
+
+  nav a:hover {
+    color: #007bfa;
+
+  }
+
+  .primary {
+    margin-bottom: 1px;
+  }
+
+  .book-btn .btn {
+    text-align: center;
+    padding: 20%;
+    width: 20px;
+
+  }
+
+.next-middle{
+  display: block;
+  text-align: center;
+}
+
+
+
+  .unlock-ubga div img {
+    width: 327px;
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  .first {
+    display: none;
+  }
+
+  .header {
+    margin-top: 20px;
+    grid-area: header;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    background: fixed;
+  }
+
+  .header h1 span {
+    color: #007bfa;
+  }
+
+  nav {
+
+    position: absolute;
+    background-color: #f3f4f8;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    margin-bottom: 8rem;
+  }
+
+  nav a {
+    display: block;
+    background-color: #f3f4f8;
+    border-bottom: 1px solid #989393;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+}
+
+/* Extra small <= 576 */
+
+
+@media screen and (max-width: 576px) {
+  .header-right {
+    display: initial;
+  }
+  .next-middle-report div{
+    margin: 20px;
+  }
+  .primary {
+    display: block;
+    margin-left: 33%;
+    width: 30%;
+    height: 350px;
+  }
+.hesding{
+  width: 300px;
+}
+  .ubga-container {
+    width: 20%;
+    margin: 7%;
+    display: block;
+    align-items: center;
+    background-color: white;
+  }
+  .wp-container-middle {
+    display: inline;
+    width: 20%;
+    text-align: center;
+  }
+  .ubga-container img{
+    width: 327px;
+    height: 350px;
+  }
+  .uagb-inner {
+    display: block;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 390%;
+  }
+  .ubga-container-text{
+    display: block;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 390%;
+  }
+  .ubga-container-text h1{
+    font-weight: 800;
+    font-size: 25px;
+  }
+  .ubga-container-text p{
+    font-weight: 200;
+    font-size: 10px;
+  }
+.wp-container{
+  display: block;
+}
+  .ast-container {
+    flex-wrap: wrap;
+    background-color: #4e597d;
+    /*background-image: url('/src/assets/pexels-photo-1310781.jpeg');
+  background-position: center;
+  background-size: cover;*/
+    height: 70vh;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px 0px 50px 50px;
+  }
+
+  .heading h1{
+    font-size: 20px;
+  }
+  .book-btn {
+    text-align: center;
+    background-color: #007bfa;
+    width: 50%;
+    height: 8%;
+    margin: auto;
+    margin-bottom: 5%;
+    border-radius: 10px;
+  }
+  .wp-block div {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+
+  }
+  .last{
+    display: flex;
+    
+  }
+  .last p{
+    background-color: #007bfa;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+  .last .icon{
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #a886cd;
+  }
+  .wp-block .inner-wp-block h3{
+    font-size: 16px;
+  }
+  .wp-block .icon {
+    color: #007bfa;
+  }
+  .inner-wp-block{
+    display: block;
+  }
+  .inner-wp-block p{
+    font-weight: 600;
+    font-size: 17px;
+  }
+.wp-block {
+  margin-top: -50px;
+  display: block;
+  background-color: #fff;
+  text-align: center;
+  width: 60%;
+  height: 70vh;
+  margin-left: 25%;
+  border-radius: 10px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0.35);
+}
+.menu-icon {
+  display: inline;
+  background-color: #007bfa;
+  color: white;
+}
+
+.menu-icon .icon {
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+
+
+/*from here  */
+.testimonials{
+  display: block;
+}
+.inner-testimonials{
+  display: block;
+}
+.uagb-inner{
+  display: block;
+  width: 350px;
+  
+}
+.uagb-inner div{
+  margin: 10px;
+}
+.uagb-inner .heading ,.heading-text{
+  text-align: center;
+}
+.uagb-inner .next-testimonials{
+  display: flex;
+  text-align: center;
+}
+.uagb-inner div img{
+  border-radius: 30px;
+}
+.next-middle{
+  display: block;
+  
+  text-align: center;
+}
+.next-container-inner-block {
+  display: block;
+  text-align: center;
+}
+.next-middle-report{
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.next-addvanced-heading{
+  font-size: 15px;
+}
+.next-middle-report next-testimonials{
+  margin: 20px;
+}
+
+}
+
+
+/* Midium <=992px*/
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  .header-right {
+    display: initial;
+
+  }
+
+
+
+
+
+
+
+}
